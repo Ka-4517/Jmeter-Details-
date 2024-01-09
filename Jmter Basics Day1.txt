@@ -1,0 +1,75 @@
+Jmeter Basics :
+
+Q.What is Jmeter?
+ JMeter is an open-source performance testing tool; developed in Java. JMeter does not require any purchasing or licensing costs.
+ 
+Q.Following are some important features of Apache JMeter (as of 01/05/2023): ?
+Apache JMeter is an open-source tool. It means free to use.
+No additional licensing cost or purchasing the pro version.
+Pure Java-based application, so works on any operating system i.e. Platform Independent.
+Lightweight and easy to install
+No maintenance cost
+Easy to upgrade
+Easy to enhance the features by simply adding .jar file i.e. plug-ins
+No explicit hardware is required (depends upon the load requirement)
+Unlimited User load (Thread) generation capability (depending on LG configuration)
+Simple and User-friendly GUI
+Run in both GUI and Non-GUI mode
+The recording option helps to record the user action on an application
+Supports all the basic scripting features like parameterization, correlation, browser simulation delay in request etc.
+Easy to debug the scripts
+Support Android application performance testing
+Test the performance of both static and dynamic resources
+Supports multiple coding languages like BeanShell, Groovy and JavaScript for scripting purposes.
+Supports protocols like Web/HTTP, Web services, Databases, SOAP, etc.
+It can be integrated with third-party APM tools like DynaTrace, Applicare, Grafana etc.
+Integration with CI tools like Jenkins etc.
+Drag and drop declarative view for scripts.
+Average reporting pattern (Report in HTML format post 3.0 version)
+Proper documents are available to gain knowledge of the functionality
+Free and Commercial Online supports are available
+
+Q.Limitations:- ?
+Along with an ample number of features, Apache JMeter has some limitations too, which are (as of 01/05/2023)
+Limited protocol support
+No dedicated support team
+The script cannot be regenerated
+No Protocol adviser
+Compatibility issue in the existing script while upgrading the version
+No Run time graphs (only available when integrates with some monitoring tool like Grafana)
+Dependency on Beanshell and other coding languages for complex scenario scripting
+GC/Heap memory issue is common while running a test on a limited resource machine.
+Unpredictable issues in distributed testing
+Lack of in-depth analysis features
+Reports have fewer features which makes analysis a bit difficult
+
+Q.How to install Apache JMeter?
+1. Verify or Install JDK/JRE: Refer to the below links to verify JDK/JRE on your system OR install JDK/JRE on various OS:
+2. Download JMeter: You can download the latest version of Apache JMeter by clicking the below link:
+3. Installation of JMeter: Installation of JMeter is extremely easy and simple. You simply unzip the zip/tar file 
+into the directory where you want JMeter to be kept (installed). There is no tedious installation screen to deal with! Simply unzip and you are done!
+----------------------------------------
+Q.Launching Modes?
+1.GUI Mode
+2.Command Line Mode (Non-GUI Mode)
+3.Server Mode (Non-GUI Mode)
+
+GUI MODE:
+Purpose: The GUI mode is used for preparing the test script, debugging the script and performing the smoke test. 
+In this mode, JMeter consumes relatively more memory than in Non-GUI mode.
+
+NON GUI MODE:
+Purpose: The Non-GUI mode is used for test execution because JMeter consumes less memory in this mode; 
+helps to provide more space for threads and prevents test failure due to lack of memory.
+
+Q.To launch the JMeter or execute the test in Non-GUI mode, you need to open the console, navigate to the /bin folder of Apache JMeter and run the below command: ?
+
+For Windows: jmeter -n -t <script name with path> -l <log file name with path>
+
+For Unix: ./jmeter.sh -n -t <script name with path> -l <log file name with path>
+
+
+Purpose: Server mode is used for distributed testing. This testing works as a client-server model. 
+In this model, start the server(s) by running jmeter-server[.bat] on each server host and control those servers using GUI mode.
+
+------------------------------------------
